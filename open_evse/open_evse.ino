@@ -44,8 +44,8 @@
 #include <avr/wdt.h>
 #include <avr/pgmspace.h>
 #include <pins_arduino.h>
-#include "./Wire.h"
-#include "./RTClib.h"
+#include "Wire.h"
+#include "RTClib.h"
 #include "open_evse.h"
 
 // if using I2CLCD_PCF8574 uncomment below line  and comment out LiquidTWI2.h above
@@ -55,7 +55,7 @@
   #include "MCP9808.h"  //  adding the ambient temp sensor to I2C
   #endif 
   #ifdef TMP007_IS_ON_I2C
-  #include "./Adafruit_TMP007.h"   //  adding the TMP007 IR I2C sensor
+  #include "Adafruit_TMP007.h"   //  adding the TMP007 IR I2C sensor
   #endif 
 #endif // TEMPERATURE_MONITORING
 
